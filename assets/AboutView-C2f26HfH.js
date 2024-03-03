@@ -1,0 +1,1 @@
+import{_ as o,c as t,o as s,a as e}from"./index-DJ8JUBrP.js";const c={},n=e("h1",null,"About Me",-1),_=e("p",null,"Your bio goes here...",-1),r=[n,_];function a(l,i){return s(),t("div",null,r)}const d=o(c,[["render",a]]);export{d as default};
