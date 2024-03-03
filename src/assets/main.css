@@ -1,9 +1,6 @@
 @import './base.css';
 
 #app {
-  max-width: 1280px;
-  align-items: center;
   display: grid;
   justify-items: center;
-  justify-content: center;
 }
