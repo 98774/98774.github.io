@@ -3,27 +3,29 @@
 :root {
    /* General Colors */
    --black: #000000;
-   --dark-grey: #031303;
+   --dark-grey: #333333;
    --light-grey: #a3a3a3;
-   --white: #eeeeee;
+   --white: #ffffff;
    --green: #4CAF50;
    --light-green: #78f07d;
    --grey: #464646;
  
   /* Themed Colors */
-  --main-background-color: #303030;
-  --nav-background-color: var(--dark-grey);
+  --main-background-color: var(--dark-grey);
+  --nav-background-color: var(--black);
 
-  --main-color: var(--green);
-  --secondary-color: var(--light-green);
-  --accent-color: var(--light-grey);
+  --main-color: #95E06C;
+  --accent-color-3: #C3F73A;
+  --accent-color-1: #68B684;
+  --accent-color-2: #094D92;
 
   --highlight-background: var(--grey);
-  --highlight-color: var(--secondary-color);
+  --highlight-color: var(--light-grey);
 
   /* Content Settings */
   --default-margin: 5px;
-  --header-font-size: 20pt;
+  --default-padding: 5px;
+  --header-font-size: 27pt;
   --content-font-size: 16pt;
   --content-max-width: 1200px;
 }
@@ -40,9 +42,18 @@ body {
     'Droid Sans',
     'Helvetica Neue',
     sans-serif;
-  font-size: 15px;
 }
 
-h1 h2 h3 {
-  color: var(--secondary-color);
+h1 {
+  color: var(--accent-color-1);
+  font-size: var(--header-font-size);
+}
+
+h2, h3 {
+  color: var(--light-grey);
+}
+
+p, a, li {
+  font-size: var(--content-font-size);
+  color: var(--light-grey);
 }
