@@ -72,13 +72,5 @@ section {
   margin: 0 auto;
 }
 
-a {
-  color: #007BFF;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
 </style>
   

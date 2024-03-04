@@ -53,7 +53,18 @@ h2, h3 {
   color: var(--light-grey);
 }
 
-p, a, li {
+p, li {
   font-size: var(--content-font-size);
   color: var(--light-grey);
+}
+
+a {
+  font-size: var(--content-font-size);
+  text-decoration: none;
+  color: var(--accent-color-3)
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--highlight-color);
 }

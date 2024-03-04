@@ -31,21 +31,12 @@
   }
 
   .summary, .content-panel {
-    border: 2px solid var(--accent-color-3);
+    border: 2px solid var(--grey);
     margin: var(--default-margin);
     padding: calc(2 * var(--default-padding));
     border-radius: 10px;
   }
 
-  a {
-    color: var(--light-grey);
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
   .content-panel {
     margin-top: calc(var(--default-margin) * 4);
     text-align: left;

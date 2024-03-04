@@ -4,7 +4,11 @@
     <div>
       <ProjectInfo projectTitle="Dactyl Manuform" githubLink="https://github.com/98774/qmk_firmware.git">
         <template v-slot:summary>
-          <p>Here I document my findings while building a dactyl mauform keyboard. All QMK code is available in the repository.</p>
+          <p>Here I document my findings while building a 
+            <a href="https://www.google.com/search?sca_esv=6416c49529b0d5b1&sxsrf=ACQVn08YaMqSmNyxyHYJ6-tJ7vE59Xx7yw:1709590683343&q=dactyl+manuform&tbm=isch&source=lnms&sa=X&sqi=2&ved=2ahUKEwix45DL0duEAxUyN2IAHRN8D9wQ0pQJegQIDRAB&biw=1920&bih=939&dpr=1">
+              Dactyl ManuForm
+            </a>
+            keyboard. All QMK code is available in the repository.</p>
 
         </template>
         
@@ -42,9 +46,3 @@
     },
   });
   </script>
-  
-  <!-- Add styling for ParentComponent if needed -->
-  <style scoped>
-  /* ... */
-  </style>
-  
