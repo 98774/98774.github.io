@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>About Me</h1>
     <BioComponent />
   </div>
 </template>
@@ -9,7 +8,7 @@ import { defineComponent } from 'vue';
 import BioComponent from '@/components/BioComponent.vue'; // Adjust the path based on your project structure
 
 export default defineComponent({
-  name: 'AbouteView',
+  name: 'AboutView',
   components: {
     BioComponent,
   },

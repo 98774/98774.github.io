@@ -72,21 +72,6 @@ section {
   margin: 0 auto;
 }
 
-p {
-  color: var(--light-grey);
-  margin-bottom: 20px;
-  font-size: var(--content-font-size);
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  margin-bottom: 10px;
-}
-
 a {
   color: #007BFF;
   text-decoration: none;

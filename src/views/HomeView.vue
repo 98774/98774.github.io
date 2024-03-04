@@ -3,9 +3,7 @@
   <div>
     <h1>Home</h1>
     <div class="panel">
-      <router-link to="/projects" class="project-link">Project 1</router-link>
-      <router-link to="/project2" class="project-link">Project 2</router-link>
-      <router-link to="/project3" class="project-link">Project 3</router-link>
+      Welcom to my site! Feel free to explore and reach out if you have any questions!
     </div>
   </div>
 </template>

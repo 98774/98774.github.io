@@ -22,13 +22,15 @@ const router = createRouter({
       name: 'contact',
       component: () => import('../views/ContactView.vue')
     },
-
-    
-
     {
       path: '/projects',
-      name: 'project1',
-      component: HomeView
+      name: 'projects',
+      component: () => import('../views/ProjectsView.vue')
+    },
+    {
+      path: '/projects/dactyl-manuform',
+      name: 'dactyl-manuform',
+      component: () => import('../views/ProjectDactylManuformView.vue')
     },
     {
       path: '/project2',

@@ -5,6 +5,7 @@
       <router-link to="/" class="nav-link">Home</router-link>
       <router-link to="/about" class="nav-link">About</router-link>
       <router-link to="/projects" class="nav-link">Projects</router-link>
+      <router-link to="/contact" class="nav-link">Contact</router-link>
     </header>
 
     <main>
@@ -29,8 +30,7 @@ header {
 
 .nav-link {
   padding: 15px;
-  background-color: var(--tertiary-color);
-  color: var(--main-color);
+  color: var(--accent-color-1);
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s;

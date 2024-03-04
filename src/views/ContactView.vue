@@ -65,6 +65,7 @@ export default defineComponent({
 
 a {
   color: var(--main-color);
+  text-decoration: none;
 }
 
 a:hover {
