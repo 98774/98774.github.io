@@ -20,7 +20,7 @@
 <style>
 
 header {
-  background-color: var(--tertiary-color);
+  background-color: var(--nav-background-color);
   padding: 5px;
   text-align: center;
   display: flex;
@@ -30,7 +30,7 @@ header {
 .nav-link {
   padding: 15px;
   background-color: var(--tertiary-color);
-  color: var(--secondary-color);
+  color: var(--main-color);
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s;
@@ -40,13 +40,13 @@ header {
 }
 
 .nav-link:hover {
-  background-color: var(--dark-grey);
+  background-color: var(--highlight-background);
   font-weight: 999;
-  color: var(--light-grey);
+  color: var(--highlight-color);
 }
 
 footer {
-  background-color: var(--tertiary-color);
+  background-color: var(--nav-background-color);
   text-align: center;
   position: fixed;
   bottom: 0;

@@ -18,18 +18,20 @@
 }
 
 .project-link {
-  padding: 10px;
+  padding: 15px;
   background-color: var(--tertiary-color);
-  color: var(--secondary-color);
+  color: var(--main-color);
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s;
-  font-size: 16px;
+  font-size: var(--header-font-size);
+  margin: var(--default-margin);
   font-weight: bold;
-  margin: 10px;
 }
 
 .project-link:hover {
-  background-color: var(--dark-grey);
+  background-color: var(--highlight-background);
+  font-weight: 999;
+  color: var(--highlight-color);
 }
 </style>

@@ -1,19 +1,35 @@
 /* color palette from <https://github.com/vuejs/theme> */
 
 :root {
-  --main-color: #303030; /* Dark background color */
-  --secondary-color: #4CAF50; /* Green accent color */
-  --tertiary-color: #212121; /* Darker background color */
-  --black: #000000;
-  --dark-grey: #333333;
-  --light-grey: #a3a3a3;
-  --white: #eeeeee;
+   /* General Colors */
+   --black: #000000;
+   --dark-grey: #031303;
+   --light-grey: #a3a3a3;
+   --white: #eeeeee;
+   --green: #4CAF50;
+   --light-green: #78f07d;
+   --grey: #464646;
+ 
+  /* Themed Colors */
+  --main-background-color: #303030;
+  --nav-background-color: var(--dark-grey);
+
+  --main-color: var(--green);
+  --secondary-color: var(--light-green);
+  --accent-color: var(--light-grey);
+
+  --highlight-background: var(--grey);
+  --highlight-color: var(--secondary-color);
+
+  /* Content Settings */
   --default-margin: 5px;
   --header-font-size: 20pt;
+  --content-font-size: 16pt;
+  --content-max-width: 1200px;
 }
 
 body {
-  background-color: var(--main-color);
+  background-color: var(--main-background-color);
   color: var(--light-grey);
   margin: 0;
   text-align: center;
@@ -25,4 +41,8 @@ body {
     'Helvetica Neue',
     sans-serif;
   font-size: 15px;
+}
+
+h1 h2 h3 {
+  color: var(--secondary-color);
 }
