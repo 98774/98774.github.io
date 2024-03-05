@@ -1,39 +1,50 @@
 <!-- Home.vue -->
 <template>
-  <div>
+  <div class="content">
     <h1>Projects</h1>
-    <div class="panel">
-      <router-link to="/projects/dactyl-manuform" class="project-link"
-        >Dactyl Mauform Build</router-link
-      >
-      <router-link to="/project2" class="project-link">Project 2</router-link>
-      <router-link to="/project3" class="project-link">Project 3</router-link>
-    </div>
+
+    <ProjectLinkComponent linkText="Dactyl Manuform Build" routerLink="/projects/dactyl-manuform">
+      <template v-slot:details>
+        <div>Dactyl Manuform 4x5 keyboard build</div>
+        <div>RGB backlight and custom layering using QMK</div>
+        <div>Build journey and parts list</div>
+      </template>
+    </ProjectLinkComponent>
+
+    <ProjectLinkComponent linkText="Minecraft Server" routerLink="/projects/mcserver">
+      <template v-slot:details>
+        <div>Linux Hosted Minecraft server configuration</div>
+        <div>Startup scripts and ideas</div>
+      </template>
+    </ProjectLinkComponent>
+
+    <ProjectLinkComponent linkText="Wireless LED Display" routerLink="/projects/wireless-grid">
+      <template v-slot:details>
+        <div>Dactyl Manuform 4x5 keyboard build</div>
+        <div>RGB backlight and custom layering using QMK</div>
+        <div>Build journey and parts list</div>
+      </template>
+    </ProjectLinkComponent>
   </div>
 </template>
+<script lang="ts">
+import { defineComponent } from 'vue'
+import ProjectLinkComponent from '@/components/ProjectLinkComponent.vue' // Adjust the path based on your project structure
+
+export default defineComponent({
+  name: 'ProjectsView',
+  components: {
+    ProjectLinkComponent
+  }
+})
+</script>
 
 <style>
-.panel {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+.content {
+  width: var(--content-max-width);
 }
 
-.project-link {
-  padding: 15px;
-  background-color: var(--tertiary-color);
-  color: var(--main-color);
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-  font-size: var(--header-font-size);
-  margin: var(--default-margin);
-  font-weight: bold;
-}
-
-.project-link:hover {
-  background-color: var(--highlight-background);
-  font-weight: 999;
-  color: var(--highlight-color);
+.heading {
+  text-align: center;
 }
 </style>

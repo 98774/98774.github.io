@@ -23,6 +23,12 @@ const router = createRouter({
       component: () => import('../views/ContactView.vue')
     },
     {
+      path: '/programming-tricks',
+      name: 'programming-tricks',
+      component: () => import('../views/ProgrammingTricksView.vue')
+    },
+    
+    {
       path: '/projects',
       name: 'projects',
       component: () => import('../views/ProjectsView.vue')
@@ -33,13 +39,13 @@ const router = createRouter({
       component: () => import('../views/ProjectDactylManuformView.vue')
     },
     {
-      path: '/project2',
-      name: 'project2',
+      path: '/projects/mcserver',
+      name: 'mcserver',
       component: HomeView
     },
     {
-      path: '/project3',
-      name: 'project3',
+      path: '/projects/wireless-grid',
+      name: 'wireless-grid',
       component: HomeView
     }
   ]

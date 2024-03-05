@@ -6,6 +6,7 @@
       <router-link to="/about" class="nav-link">About</router-link>
       <router-link to="/projects" class="nav-link">Projects</router-link>
       <router-link to="/contact" class="nav-link">Contact</router-link>
+      <router-link to="/programming-tricks" class="nav-link">Programming Tricks</router-link>
     </header>
 
     <main>
@@ -25,6 +26,8 @@ header {
   text-align: center;
   display: flex;
   margin: var(--default-margin);
+  border: solid 2px var(--accent-color-1);
+  border-radius: 5px;
 }
 
 .nav-link {
@@ -35,12 +38,10 @@ header {
   transition: background-color 0.3s;
   font-size: var(--header-font-size);
   margin: var(--default-margin);
-  font-weight: bold;
 }
 
 .nav-link:hover {
   background-color: var(--highlight-background);
-  font-weight: 999;
   color: var(--highlight-color);
 }
 

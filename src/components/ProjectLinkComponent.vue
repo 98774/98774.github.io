@@ -14,7 +14,6 @@
 </template>
 
 <script lang="ts">
-import router from '@/router'
 import { defineComponent } from 'vue'
 
 export default defineComponent({
@@ -38,20 +37,18 @@ export default defineComponent({
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  text-align: center;
   height: 120px;
-  width: calc(0.8 * var(--content-max-width));
+  width: calc(var(--content-max-width));
 }
 
 .detail {
   flex-direction: column;
   flex-grow: 1;
   text-align: right;
-  margin: calc(3 *var(--default-margin));
   overflow: hidden;
   max-width: 0;
   max-height: 100px;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 
 .container:hover {
@@ -65,12 +62,13 @@ export default defineComponent({
   color: var(--accent-color-3);
   max-width: calc(100% - 200px);
   display: flex;
+  margin: calc(3 *var(--default-margin));
+
 }
 
 .container:hover .project-link {
   background-color: var(--highlight-background);
-  font-weight: 999;
-  color: var(--highlight-color);
+  color: var(--accent-color-3);
 }
 
 </style>
