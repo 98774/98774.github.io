@@ -19,7 +19,6 @@
 </template>
 
 <style>
-
 header {
   background-color: var(--nav-background-color);
   padding: 5px;

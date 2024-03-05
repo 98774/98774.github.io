@@ -9,15 +9,15 @@
       </div>
       <div class="info">
         <div class="info-item">
-          <strong>Email:  </strong>
+          <strong>Email: </strong>
           <a :href="'mailto:' + email">{{ email }}</a>
         </div>
         <div class="info-item">
-          <strong>LinkedIn:  </strong>
+          <strong>LinkedIn: </strong>
           <a :href="linkedIn" target="_blank" rel="noopener noreferrer">{{ linkedinUsername }}</a>
         </div>
         <div class="info-item">
-          <strong>GitHub:  </strong>
+          <strong>GitHub: </strong>
           <a :href="github" target="_blank" rel="noopener noreferrer">{{ githubUsername }}</a>
         </div>
       </div>
@@ -26,7 +26,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'ContactView',
@@ -34,13 +34,13 @@ export default defineComponent({
     return {
       email: 'j.snyder98774@gmail.com',
       linkedinUsername: 'js-snyder',
-      githubUsername: '98774 (yes, just the number...)' ,
+      githubUsername: '98774 (yes, just the number...)',
       linkedIn: 'https://www.linkedin.com/in/js-snyder/',
       github: 'https://github.com/98774',
       profilePicture: '@/assets/fiery_earth.jpg' //Not used right now
-    };
-  },
-});
+    }
+  }
+})
 </script>
 
 <style scoped>
@@ -57,7 +57,7 @@ export default defineComponent({
   border-radius: 50%; /* Make it a circle */
   margin-right: 20px;
 }
-  
+
 .info-item {
   margin: calc(3 * var(--default-margin));
   font-size: var(--content-font-size);
@@ -71,5 +71,4 @@ a {
 a:hover {
   color: var(--highlight-color);
 }
-
-</style>  
+</style>
