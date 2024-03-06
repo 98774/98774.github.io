@@ -1,1 +1,0 @@
-import{B as e}from"./BioComponent-DlfP5b6S.js";import{d as n,_ as t,r as s,o as a,c,a as p}from"./index-5WCcGKtM.js";import"./ProjectLinkComponent-vJSkk-Tc.js";const r=n({name:"AboutView",components:{BioComponent:e}});function m(i,_,d,f,l,u){const o=s("BioComponent");return a(),c("div",null,[p(o)])}const $=t(r,[["render",m],["__scopeId","data-v-fdb7eb36"]]);export{$ as default};
