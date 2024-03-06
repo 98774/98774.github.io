@@ -62,13 +62,4 @@ export default defineComponent({
   margin: calc(3 * var(--default-margin));
   font-size: var(--content-font-size);
 }
-
-a {
-  color: var(--main-color);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--highlight-color);
-}
 </style>
