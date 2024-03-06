@@ -45,17 +45,17 @@ const router = createRouter({
     {
       path: '/projects/mcserver',
       name: 'mcserver',
-      component: HomeView
+      component: () => import('../views/ProjectMinecraftServerView.vue')
     },
     {
       path: '/projects/wireless-grid',
       name: 'wireless-grid',
-      component: HomeView
+      component: () => import('../views/ProjectWirelessLEDView.vue')
     },
     {
       path: '/projects/srt-program',
       name: 'srt-program',
-      component: HomeView
+      component: () => import('../views/ProjectSRTProgramView.vue')
     },
 
     //Redirect to home when not found
