@@ -66,6 +66,7 @@ export default defineComponent({
 
 .container:hover .nav-link {
   color: var(--accent-color-3);
+  background-color: transparent;
   font-weight: normal;
 }
 </style>
