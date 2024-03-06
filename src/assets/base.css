@@ -3,7 +3,7 @@
 :root {
   /* General Colors */
   --black: #000000;
-  --dark-grey: #333333;
+  --dark-grey: #303634;
   --light-grey: #a3a3a3;
   --white: #ffffff;
   --green: #4caf50;
@@ -13,7 +13,8 @@
 
   /* Themed Colors */
   --main-background-color: var(--dark-grey);
-  --nav-background-color: var(--black);
+  --nav-background-color: var(--dark-grey);
+  --default-panel-background: var(--panel-grey);
 
   --main-color: #95e06c;
   --accent-color-3: #c3f73a;
@@ -22,8 +23,6 @@
 
   --highlight-background: var(--grey);
   --highlight-color: var(--light-grey);
-
-  --default-panel-background: var(--panel-grey);
 
   /* Content Settings */
   --default-margin: 5px;

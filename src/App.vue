@@ -30,8 +30,6 @@ header {
   text-align: center;
   display: flex;
   margin: var(--default-margin);
-  border: solid 2px var(--accent-color-1);
-  border-radius: var(--default-border-radius);
 }
 
 .nav-link {
