@@ -28,6 +28,10 @@ export default defineComponent({
 </script>
 
 <style scoped>
+.nav-link {
+  color: var(--light-grey)
+}
+
 .container {
   display: flex;
   flex-direction: row;
@@ -51,7 +55,7 @@ export default defineComponent({
 }
 
 .container:hover {
-  background-color: var(--highlight-background);
+  background-color: var(--default-panel-background);
   width: calc(var(--content-max-width) * 0.8);
 
   cursor: pointer;
