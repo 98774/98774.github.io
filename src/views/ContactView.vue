@@ -3,6 +3,7 @@
 <template>
   <div>
     <h1>Contact Information</h1>
+    <p></p>
     <div class="contact-info">
       <div class="profile-image">
         <img src="@/assets/fiery_earth.jpg" alt="Profile Image" />
@@ -19,6 +20,10 @@
         <div class="info-item">
           <strong>GitHub: </strong>
           <a :href="github" target="_blank" rel="noopener noreferrer">{{ githubUsername }}</a>
+        </div>
+        <div class="info-item">
+          <strong>Website: </strong>
+          <a :href="website" target="_blank" rel="noopener noreferrer">{{ websiteText }}</a>
         </div>
       </div>
     </div>
@@ -37,7 +42,9 @@ export default defineComponent({
       githubUsername: '98774 (yes, just the number...)',
       linkedIn: 'https://www.linkedin.com/in/js-snyder/',
       github: 'https://github.com/98774',
-      profilePicture: '@/assets/fiery_earth.jpg' //Not used right now
+      profilePicture: '@/assets/fiery_earth.jpg',
+      website: 'https://98774.github.io',
+      websiteText: '98774.github.io'
     }
   }
 })
@@ -49,17 +56,20 @@ export default defineComponent({
   align-items: center;
   justify-content: left;
   text-align: left;
+  background-color: var(--default-panel-background);
+  border-radius: var(--default-border-radius);
+  padding: calc(2 * var(--default-padding));
 }
 
 .profile-image img {
-  width: 100px; /* Set the desired width for the profile image */
-  height: 100px; /* Set the desired height for the profile image */
+  width: 150px; /* Set the desired width for the profile image */
+  height: 150px; /* Set the desired height for the profile image */
   border-radius: 50%; /* Make it a circle */
   margin-right: 20px;
 }
 
 .info-item {
-  margin: calc(3 * var(--default-margin));
+  margin: calc(2 * var(--default-margin));
   font-size: var(--content-font-size);
 }
 </style>
