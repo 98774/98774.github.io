@@ -27,14 +27,15 @@ header {
   display: flex;
   margin: var(--default-margin);
   border: solid 2px var(--accent-color-1);
-  border-radius: 5px;
+  border-radius: var(--default-border-radius);
 }
 
 .nav-link {
   padding: 15px;
   color: var(--accent-color-1);
   text-decoration: none;
-  border-radius: 5px;
+
+  border-radius: var(--default-border-radius);
   transition: background-color 0.3s;
   font-size: var(--header-font-size);
   margin: var(--default-margin);

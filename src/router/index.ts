@@ -27,7 +27,7 @@ const router = createRouter({
       name: 'programming-tricks',
       component: () => import('../views/ProgrammingTricksView.vue')
     },
-    
+
     {
       path: '/projects',
       name: 'projects',
