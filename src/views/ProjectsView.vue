@@ -4,7 +4,7 @@
     <h1>Projects</h1>
     <p>(Ordered by interest)</p>
 
-    <ProjectLinkComponent linkText="SRT Program" routerLink="/projects/srt-program">
+    <SummaryLinkComponent linkText="SRT Program" routerLink="/projects/srt-program">
       <template v-slot:details>
         <ul>
           <li>Program for tracking dynamic attendance for schools</li>
@@ -12,9 +12,9 @@
           <li>Tracks "sign-outs" for students and enables requests</li>
         </ul>
       </template>
-    </ProjectLinkComponent>
+    </SummaryLinkComponent>
 
-    <ProjectLinkComponent linkText="Dactyl Manuform Build" routerLink="/projects/dactyl-manuform">
+    <SummaryLinkComponent linkText="Dactyl Manuform Build" routerLink="/projects/dactyl-manuform">
       <template v-slot:details>
         <ul>
           <li>Dactyl Manuform 4x5 keyboard build</li>
@@ -22,18 +22,18 @@
           <li>Build journey and parts list</li>
         </ul>
       </template>
-    </ProjectLinkComponent>
+    </SummaryLinkComponent>
 
-    <ProjectLinkComponent linkText="Minecraft Server" routerLink="/projects/mcserver">
+    <SummaryLinkComponent linkText="Minecraft Server" routerLink="/projects/mcserver">
       <template v-slot:details>
         <ul>
           <li>Linux Hosted Minecraft server configuration</li>
           <li>Startup scripts and ideas</li>
         </ul>
       </template>
-    </ProjectLinkComponent>
+    </SummaryLinkComponent>
 
-    <ProjectLinkComponent linkText="Wireless LED Display" routerLink="/projects/wireless-grid">
+    <SummaryLinkComponent linkText="Wireless LED Display" routerLink="/projects/wireless-grid">
       <template v-slot:details>
         <ul>
           <li>Senior Design project at Purdue</li>
@@ -41,17 +41,17 @@
           <li>Bluetooth app to control each grid</li>
         </ul>
       </template>
-    </ProjectLinkComponent>
+    </SummaryLinkComponent>
   </div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
-import ProjectLinkComponent from '@/components/ProjectLinkComponent.vue'
+import SummaryLinkComponent from '@/components/SummaryLinkComponent.vue'
 
 export default defineComponent({
   name: 'ProjectsView',
   components: {
-    ProjectLinkComponent
+    SummaryLinkComponent
   }
 })
 </script>
