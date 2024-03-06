@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <BioComponent />
+  <div class="content">
+    <h1>Programming Tips and Tricks</h1>
   </div>
 </template>
 <script lang="ts">

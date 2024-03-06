@@ -23,8 +23,8 @@ const router = createRouter({
       component: () => import('../views/ContactView.vue')
     },
     {
-      path: '/programming-tricks',
-      name: 'programming-tricks',
+      path: '/tips-and-tricks',
+      name: 'tips-and-tricks',
       component: () => import('../views/ProgrammingTricksView.vue')
     },
 
@@ -46,6 +46,17 @@ const router = createRouter({
     {
       path: '/projects/wireless-grid',
       name: 'wireless-grid',
+      component: HomeView
+    },
+    {
+      path: '/projects/srt-program',
+      name: 'srt-program',
+      component: HomeView
+    },
+
+    //Redirect to home when not found
+    {
+      path: '/:pathMatch(.*)*',
       component: HomeView
     }
   ]

@@ -6,7 +6,7 @@
       <router-link to="/about" class="nav-link">About</router-link>
       <router-link to="/projects" class="nav-link">Projects</router-link>
       <router-link to="/contact" class="nav-link">Contact</router-link>
-      <router-link to="/programming-tricks" class="nav-link">Programming Tricks</router-link>
+      <router-link to="/tips-and-tricks" class="nav-link">Tips and Tricks</router-link>
     </header>
 
     <main>
@@ -20,6 +20,10 @@
 </template>
 
 <style>
+main {
+  /* prevent behind footer */
+  margin-bottom: 55px;
+}
 header {
   background-color: var(--nav-background-color);
   padding: 5px;
