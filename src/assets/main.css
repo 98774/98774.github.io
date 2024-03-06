@@ -4,3 +4,19 @@
   display: grid;
   justify-items: center;
 }
+
+.vertical-flex {
+    display: flex;
+    flex-direction: column;
+    width: var(--content-max-width);
+    align-items: center;
+    justify-content: start;
+}
+
+.horizontal-flex {
+  display: flex;
+  flex-direction: row;
+  width: var(--content-max-width);
+  align-items: start;
+  justify-content: center;
+}
