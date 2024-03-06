@@ -10,6 +10,10 @@
       </div>
       <div class="info">
         <div class="info-item">
+          <strong>Name: </strong>
+          <span>{{ name }}</span>
+        </div>
+        <div class="info-item">
           <strong>Email: </strong>
           <a :href="'mailto:' + email">{{ email }}</a>
         </div>
@@ -37,6 +41,7 @@ export default defineComponent({
   name: 'ContactView',
   data() {
     return {
+      name: 'Jonathon Shirk Snyder',
       email: 'j.snyder98774@gmail.com',
       linkedinUsername: 'js-snyder',
       githubUsername: '98774 (yes, just the number...)',
@@ -51,6 +56,9 @@ export default defineComponent({
 </script>
 
 <style scoped>
+span {
+  color: var(--accent-color-3);
+}
 .contact-info {
   display: flex;
   align-items: center;
@@ -62,8 +70,8 @@ export default defineComponent({
 }
 
 .profile-image img {
-  width: 150px; /* Set the desired width for the profile image */
-  height: 150px; /* Set the desired height for the profile image */
+  width: 180px; /* Set the desired width for the profile image */
+  height: 180px; /* Set the desired height for the profile image */
   border-radius: 50%; /* Make it a circle */
   margin-right: 20px;
 }
