@@ -35,7 +35,8 @@ export default defineComponent({
   border: 2px solid var(--grey);
   margin: var(--default-margin);
   padding: calc(2 * var(--default-padding));
-  border-radius: 10px;
+
+  border-radius: var(--default-border-radius);
 }
 
 .content-panel {

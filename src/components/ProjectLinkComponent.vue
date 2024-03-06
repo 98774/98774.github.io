@@ -4,7 +4,7 @@
   <routerLink :to="routerLink">
     <div class="container">
       <div class="heading">
-        <div class="project-link">{{ linkText }}</div>
+        <div class="nav-link">{{ linkText }}</div>
       </div>
       <div class="detail">
         <slot name="details"></slot>
@@ -27,48 +27,41 @@ export default defineComponent({
 })
 </script>
 
-<style scoped>npm
-.project-link {
-  color: var(--accent-color-3);
-}
-
+<style scoped>
 .container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   height: 120px;
-  width: calc(var(--content-max-width));
+  border-radius: var(--default-border-radius);
 }
 
 .detail {
+  display: flex;
   flex-direction: column;
   flex-grow: 1;
-  text-align: right;
+  text-align: left;
   overflow: hidden;
   max-width: 0;
-  max-height: 100px;
+  max-height: 110px;
   transition: all 0.5s;
+  justify-content: center;
+  align-items: center;
 }
 
 .container:hover {
-  border: 2px solid var(--highlight-color);
-  border-radius: 10px;
   background-color: var(--highlight-background);
   width: calc(var(--content-max-width) * 0.8);
+
   cursor: pointer;
 }
 .container:hover .detail {
-  color: var(--accent-color-3);
-  max-width: calc(100% - 200px);
-  display: flex;
-  margin: calc(3 *var(--default-margin));
-
+  max-width: calc(100%);
 }
 
-.container:hover .project-link {
-  background-color: var(--highlight-background);
+.container:hover .nav-link {
   color: var(--accent-color-3);
+  font-weight: normal;
 }
-
 </style>
