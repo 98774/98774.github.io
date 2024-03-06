@@ -30,12 +30,10 @@ export default defineComponent({
   max-width: var(--content-max-width);
 }
 
-.summary,
 .content-panel {
-  border: 2px solid var(--grey);
   margin: var(--default-margin);
   padding: calc(2 * var(--default-padding));
-
+  background-color: var(--default-panel-background);
   border-radius: var(--default-border-radius);
 }
 

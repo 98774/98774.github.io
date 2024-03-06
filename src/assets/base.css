@@ -8,7 +8,8 @@
   --white: #ffffff;
   --green: #4caf50;
   --light-green: #78f07d;
-  --grey: #464646;
+  --grey: #505050;
+  --panel-grey: #464646;
 
   /* Themed Colors */
   --main-background-color: var(--dark-grey);
@@ -21,6 +22,8 @@
 
   --highlight-background: var(--grey);
   --highlight-color: var(--light-grey);
+
+  --default-panel-background: var(--panel-grey);
 
   /* Content Settings */
   --default-margin: 5px;
