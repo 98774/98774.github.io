@@ -29,7 +29,7 @@ export default defineComponent({
 
 <style scoped>
 .nav-link {
-  color: var(--light-grey)
+  color: var(--accent-color-2);
 }
 
 .container {
@@ -37,7 +37,7 @@ export default defineComponent({
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 120px;
+  height: 110px;
   border-radius: var(--default-border-radius);
 }
 
@@ -48,8 +48,8 @@ export default defineComponent({
   text-align: left;
   overflow: hidden;
   max-width: 0;
-  max-height: 110px;
-  transition: all 0.5s;
+  max-height: 100px;
+  transition: all 0.3s;
   justify-content: center;
   align-items: center;
 }
@@ -61,7 +61,7 @@ export default defineComponent({
   cursor: pointer;
 }
 .container:hover .detail {
-  max-width: calc(100%);
+  max-width: 60%;
 }
 
 .container:hover .nav-link {

@@ -19,7 +19,7 @@
   --main-color: #95e06c;
   --accent-color-3: #c3f73a;
   --accent-color-1: #68b684;
-  --accent-color-2: #094d92;
+  --accent-color-2: #99aea1;
 
   --highlight-background: var(--grey);
   --highlight-color: var(--light-grey);
@@ -56,7 +56,7 @@ h3 {
 p,
 li {
   font-size: var(--content-font-size);
-  color: var(--light-grey);
+  color: var(--accent-color-2);
 }
 
 a {
