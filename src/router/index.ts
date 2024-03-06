@@ -27,8 +27,8 @@ const router = createRouter({
       component: ContactView
     },
     {
-      path: '/tips-and-tricks',
-      name: 'tips-and-tricks',
+      path: '/home/programming-tricks',
+      name: 'programming-tricks',
       component: ProgrammingTricksView
     },
 
