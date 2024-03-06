@@ -132,6 +132,7 @@ section {
 .selected {
   max-width: var(--content-max-width);
   height: min-content;
+  max-height: 500px;
   background-color: var(--highlight-background);
   h2 {
     color: var(--accent-color-3);
