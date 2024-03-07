@@ -6,7 +6,6 @@
       <router-link to="/about" class="nav-link">About</router-link>
       <router-link to="/projects" class="nav-link">Projects</router-link>
       <router-link to="/contact" class="nav-link">Contact</router-link>
-      <router-link to="/tips-and-tricks" class="nav-link">Tips and Tricks</router-link>
     </header>
 
     <main>
