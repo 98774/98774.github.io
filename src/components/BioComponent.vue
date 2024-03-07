@@ -1,7 +1,7 @@
 <!-- BioComponent.vue -->
 
 <template>
-  <h1>About Me:</h1>
+  <h1>About</h1>
   <strong><p>Web Development && Embedded (Software || Linux)</p></strong>
   <p>Hi, I'm Jonathon Shirk Snyder</p>
   <div class="content">
@@ -19,34 +19,45 @@
         <p>
           In May 2023, I graduated with a Bachelor's degree in Computer Engineering from Purdue
           University. Much of my time at Purdue focused on embedded software. I really enjoy working
-          in the boundary between hardware and software that allows custom built devices to run
-          optimally.
+          in the boundary between hardware and software to create custom platforms.
         </p>
         <p>
-          In the realm of embedded systems, I have a strong background in working with Embedded
-          Linux and OpenWRT. I enjoy the challenges of connecting software with hardware, to design
-          custom systems that are very efficient.
+          I have a strong background in working with Embedded Linux and the linux kernel. I have
+          built linux for a variety of devices using the buildroot and the OpenWRT build systems. I
+          enjoy the challenge of connecting software with hardware and designing systems for custom
+          purposes.
         </p>
         <p>
-          On the other side of the spectrum, I have used Javascript for many years and more recently
-          delved into using WebSockets. On the front-end, I've utilized JavaScript-based WebSockets
-          in combination with Vue.js to create responsive interfaces and real-time updates.
+          On the other side of the spectrum, I enjoy web development. I have been using Javascript
+          for many years and more recently began using frameworks, specifically Vue.js. This site
+          was built with
+          <a href="https://vuejs.org/">Vue.js</a> so go check it out! Beyond the front-end, I enjoy
+          server configuration and database management. I recently implemented WebSockets on an
+          embedded system that doubled as a lightweight web server.
+        </p>
+        <p>
+          Right now I work for <a href="https://dedesignworks.com/">DE Design Works</a> in St.
+          Louis, MO as a Software Engineer
         </p>
       </div>
 
       <div :class="{ detail: true, selected: currentDetail === 1 }">
         <p>
           When I'm not working on personal projects, I love getting outside. Rock climbing is my
-          favorite outdoor activity, but I also enjoy hiking and backpacking. I haven't always been
-          a "people person", but since graduating from college I have found the value of
-          relationships only continues to grow.
+          favorite outdoor activity, but I also enjoy hiking and backpacking. I live in Princeton,
+          NJ with my wife Katie. Since getting married in 2022 we took turns finishing up school.
+          Now we are looking for our next adventure!
         </p>
       </div>
       <div :class="{ detail: true, selected: currentDetail === 2 }">
         <p>
           If you share a passion for technology or the outdoors, I'd love to connect. Feel free to
-          <a href="/contact">reach out</a>, and let's embark on a conversation about coding,
-          climbing, or anything in between.
+          <a href="/contact">reach out!</a> Let's talk coding or climbing or anything in between!
+        </p>
+        <p>
+          On a personal note, I haven't always been a "people person", but since graduating from
+          college I have found the value of relationships only continues to grow. Feel free to
+          connect and see what comes of it!
         </p>
       </div>
     </section>
@@ -55,7 +66,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import ProjectLinkComponent from '@/components/ProjectLinkComponent.vue'
+import SummaryLinkComponent from '@/components/SummaryLinkComponent.vue'
 
 export default defineComponent({
   data() {
@@ -70,7 +81,7 @@ export default defineComponent({
   },
 
   components: {
-    ProjectLinkComponent
+    SummaryLinkComponent
   }
 })
 </script>
@@ -123,7 +134,7 @@ section {
 }
 
 .container:hover {
-  background-color: var(--highlight-background);
+  background-color: var(--default-panel-background);
   cursor: pointer;
   h2 {
     color: var(--accent-color-3);
