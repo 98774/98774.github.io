@@ -31,7 +31,16 @@ const router = createRouter({
       name: 'programming-tricks',
       component: ProgrammingTricksView
     },
-
+    {
+      path: '/home/drone-photos',
+      name: 'drone-photos',
+      component: () => import('../views/DronePhotosView.vue')
+    },
+    {
+      path: '/home/book-list',
+      name: 'book-list',
+      component: () => import('../views/BookListView.vue')
+    },
     {
       path: '/projects',
       name: 'projects',
