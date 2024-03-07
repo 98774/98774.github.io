@@ -50,7 +50,7 @@ export default defineComponent({
 .detail {
   display: flex;
   flex-direction: column;
-flex-grow: 1;
+  flex-grow: 1;
   text-align: left;
   overflow: hidden;
   max-width: 0;
