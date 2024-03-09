@@ -22,8 +22,7 @@
           in the boundary between hardware and software to create custom platforms.
         </p>
         <p>
-          I have a strong background in working with Embedded Linux and the linux kernel. I have
-          built linux for a variety of devices using the buildroot and the OpenWRT build systems. I
+          I have a background in linux and specifically building linux for embedded systems. I
           enjoy the challenge of connecting software with hardware and designing systems for custom
           purposes.
         </p>
@@ -45,11 +44,21 @@
         <p>
           When I'm not working on personal projects, I love getting outside. Rock climbing is my
           favorite outdoor activity, but I also enjoy hiking and backpacking. I live in Princeton,
-          NJ with my wife Katie. Since getting married in 2022 we took turns finishing up school.
+          NJ with my wife Katie. Since getting married in 2022 we have taken turns finishing up school.
           Now we are looking for our next adventure!
         </p>
       </div>
       <div :class="{ detail: true, selected: currentDetail === 2 }">
+        <p>During my time in college, I took a lot of interesting classes! Here are some of the highlights:</p>
+        <ul>
+          <li>Introduction to Compilers (ECE 46800) -- Implemented a compiler for micro C using Java</li>
+          <li>Cybersecurity (ECE 40400) -- Fundamentals of encryption algorithms and practical implementation of security</li>
+          <li>Introduction to AI (ECE 47300) -- Introduction to architecting nerual networks and the math behind AI</li>
+          <li>Real Analysis (MA 34100) -- Analysis of the real numbers (up to calculus)</li>
+          <li>Applied Algorithms (ECE 59500) -- Survey of various algorithms and their applications</li>
+        </ul>
+      </div>
+      <div :class="{ detail: true, selected: currentDetail === 3 }">
         <p>
           If you share a passion for technology or the outdoors, I'd love to connect. Feel free to
           <a href="/contact">reach out!</a> Let's talk coding or climbing or anything in between!
@@ -73,7 +82,12 @@ export default defineComponent({
     return {
       name: 'Jonathon Shirk Snyder',
       currentDetail: 0,
-      headingNames: ['Education and Experience', 'Beyond Computers', "Let's Connect"]
+      headingNames: [
+      'Education and Experience',
+      'Beyond Computers',
+      'Coursework',
+      'Let\'s Connect',
+    ]
     }
   },
   methods: {
@@ -88,14 +102,16 @@ export default defineComponent({
 
 <style scoped>
 h2 {
-  width: 300px;
+  padding-left: var(--default-padding);
+  padding-right: var(--default-padding);
 }
 
 section {
   display: flex;
   flex-direction: row;
   width: var(--content-max-width);
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: end;
 }
 
 .content {
@@ -125,8 +141,6 @@ section {
   transition: all 0.3s;
   align-items: center;
   border-radius: var(--default-border-radius);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
   height: 100px;
   p {
     max-width: 95%;
