@@ -1,5 +1,3 @@
-<!-- ProjectInfo.vue -->
-
 <template>
   <div class="project-info">
     <h1>{{ projectTitle }}</h1>
@@ -28,18 +26,6 @@ export default defineComponent({
 <style scoped>
 .project-info {
   max-width: var(--content-max-width);
-}
-
-.content-panel {
-  margin: var(--default-margin);
-  padding: calc(2 * var(--default-padding));
-  background-color: var(--default-panel-background);
-  border-radius: var(--default-border-radius);
-}
-
-.content-panel {
-  margin-top: calc(var(--default-margin) * 4);
-  text-align: left;
 }
 
 /* Add more styling based on your design preferences */

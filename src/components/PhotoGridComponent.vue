@@ -1,4 +1,3 @@
-<!-- PhotoGrid.vue -->
 <template>
   <div class="photo-grid">
     <div v-for="(photo, index) in photos" :key="index" class="photo-item">

@@ -7,7 +7,6 @@
         Welcome to my site! Feel free to explore and <a href="/contact">reach out</a> if you have
         any questions!
       </p>
-      <h2>Interesting things:</h2>
     </div>
     <div class="vertical-flex">
       <SummaryLinkComponent linkText="Programming Tricks" routerLink="/home/programming-tricks">
@@ -40,6 +39,4 @@ export default defineComponent({
 })
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

@@ -20,3 +20,13 @@
   align-items: start;
   justify-content: center;
 }
+
+.content-panel {
+  margin: var(--default-margin);
+  padding: calc(2 * var(--default-padding));
+  background-color: var(--default-panel-background);
+  border-radius: var(--default-border-radius);
+  margin-top: calc(var(--default-margin) * 4);
+  text-align: left;
+  width: var(--content-max-width);
+}

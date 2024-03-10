@@ -1,9 +1,7 @@
-<!-- ParentComponent.vue -->
-
 <template>
   <div>
     <ProjectInfo
-      projectTitle="Dactyl Manuform"
+      projectTitle="Dactyl Manuform Build"
       githubLink="https://github.com/98774/qmk_firmware.git"
     >
       <template v-slot:summary>

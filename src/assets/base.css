@@ -44,8 +44,8 @@ body {
 
 h1 {
   color: var(--light-grey);
-  font-size: var(--header-font-size);
-  margin: calc(2 * var(--default-margin));
+  font-size: calc(2 * var(--header-font-size));
+  margin: calc(var(--default-margin));
 }
 
 h2,

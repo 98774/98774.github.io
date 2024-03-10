@@ -1,5 +1,3 @@
-<!-- BioComponent.vue -->
-
 <template>
   <routerLink :to="routerLink">
     <div class="container">
