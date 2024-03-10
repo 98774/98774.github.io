@@ -22,8 +22,8 @@
           in the boundary between hardware and software to create custom platforms.
         </p>
         <p>
-          I have a background in linux and specifically building linux for embedded systems. I
-          enjoy the challenge of connecting software with hardware and designing systems for custom
+          I have a background in linux and specifically building linux for embedded systems. I enjoy
+          the challenge of connecting software with hardware and designing systems for custom
           purposes.
         </p>
         <p>
@@ -44,18 +44,31 @@
         <p>
           When I'm not working on personal projects, I love getting outside. Rock climbing is my
           favorite outdoor activity, but I also enjoy hiking and backpacking. I live in Princeton,
-          NJ with my wife Katie. Since getting married in 2022 we have taken turns finishing up school.
-          Now we are looking for our next adventure!
+          NJ with my wife Katie. Since getting married in 2022 we have taken turns finishing up
+          school. Now we are looking for our next adventure!
         </p>
       </div>
       <div :class="{ detail: true, selected: currentDetail === 2 }">
-        <p>During my time in college, I took a lot of interesting classes! Here are some of the highlights:</p>
+        <p>
+          During my time in college, I took a lot of interesting classes! Here are some of the
+          highlights:
+        </p>
         <ul>
-          <li>Introduction to Compilers (ECE 46800) -- Implemented a compiler for micro C using Java</li>
-          <li>Cybersecurity (ECE 40400) -- Fundamentals of encryption algorithms and practical implementation of security</li>
-          <li>Introduction to AI (ECE 47300) -- Introduction to architecting nerual networks and the math behind AI</li>
+          <li>
+            Introduction to Compilers (ECE 46800) -- Implemented a compiler for micro C using Java
+          </li>
+          <li>
+            Cybersecurity (ECE 40400) -- Fundamentals of encryption algorithms and practicals of
+            security
+          </li>
+          <li>
+            Introduction to AI (ECE 47300) -- Introduction to architecting nerual networks and the
+            math behind AI
+          </li>
           <li>Real Analysis (MA 34100) -- Analysis of the real numbers (up to calculus)</li>
-          <li>Applied Algorithms (ECE 59500) -- Survey of various algorithms and their applications</li>
+          <li>
+            Applied Algorithms (ECE 59500) -- Survey of various algorithms and their applications
+          </li>
         </ul>
       </div>
       <div :class="{ detail: true, selected: currentDetail === 3 }">
@@ -64,9 +77,8 @@
           <a href="/contact">reach out!</a> Let's talk coding or climbing or anything in between!
         </p>
         <p>
-          On a personal note, I haven't always been a "people person", but since graduating from
-          college I have found the value of relationships only continues to grow. Feel free to
-          connect and see what comes of it!
+          Since graduating from college I have found the value of relationships only continues to
+          grow. Feel free to connect and see what comes of it!
         </p>
       </div>
     </section>
@@ -82,12 +94,7 @@ export default defineComponent({
     return {
       name: 'Jonathon Shirk Snyder',
       currentDetail: 0,
-      headingNames: [
-      'Education and Experience',
-      'Beyond Computers',
-      'Coursework',
-      'Let\'s Connect',
-    ]
+      headingNames: ['Education and Experience', 'Beyond Computers', 'Coursework', "Let's Connect"]
     }
   },
   methods: {
@@ -111,7 +118,7 @@ section {
   flex-direction: row;
   width: var(--content-max-width);
   justify-content: space-evenly;
-  align-items: end;
+  align-items: start;
 }
 
 .content {
@@ -141,9 +148,12 @@ section {
   transition: all 0.3s;
   align-items: center;
   border-radius: var(--default-border-radius);
-  height: 100px;
-  p {
+  color: transparent;
+  p,
+  li,
+  a {
     max-width: 95%;
+    color: transparent;
   }
 }
 
@@ -156,10 +166,16 @@ section {
 }
 .selected {
   max-width: var(--content-max-width);
-  height: min-content;
-  max-height: 500px;
   background-color: var(--default-panel-background);
   h2 {
+    height: min-content;
+    color: var(--accent-color-3);
+  }
+  p,
+  li {
+    color: var(--accent-color-2);
+  }
+  a {
     color: var(--accent-color-3);
   }
 }
