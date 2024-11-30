@@ -3,8 +3,8 @@
   <div id="app">
     <header>
       <router-link to="/" class="nav-link">Home</router-link>
-      <router-link to="/about" class="nav-link">About</router-link>
       <router-link to="/projects" class="nav-link">Projects</router-link>
+      <router-link to="/about" class="nav-link">About</router-link>
       <router-link to="/contact" class="nav-link">Contact</router-link>
     </header>
 
@@ -21,18 +21,18 @@
 <style>
 main {
   /* prevent behind footer */
-  margin-bottom: 55px;
+  margin-bottom: 50px;
 }
 header {
   background-color: var(--nav-background-color);
-  padding: 5px;
+  padding: 3px;
   text-align: center;
   display: flex;
   margin: var(--default-margin);
 }
 
 .nav-link {
-  padding: 15px;
+  padding: 10px;
   color: var(--accent-color-1);
   text-decoration: none;
 

@@ -15,6 +15,4 @@ export default defineComponent({
 })
 </script>
 
-<style scoped>
-/* Add your view-specific styles here */
-</style>
+<style scoped></style>

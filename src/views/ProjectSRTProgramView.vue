@@ -2,8 +2,15 @@
 
 <template>
   <div>
-    <ProjectInfo projectTitle="SRT Program" githubLink="https://github.com/98774/qmk_firmware.git">
-      <template v-slot:summary> </template>
+    <ProjectInfo projectTitle="SRT Program">
+      <template v-slot:summary>
+        <p>
+          The SRT program is my longest running and largest project to date. This program provideds
+          school districts with an interface for creating dynamic scheduling records for student
+          resource times. For more information, check out our website at
+          <a href="https://feljon.org" target="_blank">feljon.org</a>.
+        </p>
+      </template>
 
       <template v-slot:detailed-description> </template>
     </ProjectInfo>

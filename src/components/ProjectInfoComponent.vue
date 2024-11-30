@@ -3,7 +3,9 @@
     <h1>{{ projectTitle }}</h1>
     <div class="summary">
       <slot name="summary"></slot>
-      <a :href="githubLink" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+      <a v-if="githubLink" href="githubLink" target="_blank" rel="noopener noreferrer"
+        >GitHub Repository</a
+      >
     </div>
     <div class="content-panel">
       <slot name="detailed-description"></slot>

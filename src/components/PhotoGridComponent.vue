@@ -1,7 +1,7 @@
 <template>
   <div class="photo-grid">
     <div v-for="(photo, index) in photos" :key="index" class="photo-item">
-      <img :src="photo" alt="Photo" />
+      <img :src="photo.toString()" alt="Photo" />
     </div>
   </div>
 </template>
@@ -30,7 +30,7 @@ export default defineComponent({
 
   data() {
     return {
-      photos: []
+      photos : [] as String[]
     }
   },
   components: {}

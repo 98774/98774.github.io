@@ -32,11 +32,13 @@
           was built with
           <a href="https://vuejs.org/">Vue.js</a> so go check it out! Beyond the front-end, I enjoy
           server configuration and database management. I recently implemented WebSockets on an
-          embedded system that doubled as a lightweight web server.
+          embedded system that doubled as a lightweight web server. I also implement a scheduling
+          management program for school districts. To learn more about that, visit our
+          <a href="https://feljon.org/">website</a>.
         </p>
         <p>
-          Right now I work for <a href="https://dedesignworks.com/">DE Design Works</a> in St.
-          Louis, MO as a Software Engineer
+          Right now I am serving as a year-long volunteer with for
+          <a href="https://mds.org/">Mennonite Disaster Service</a>
         </p>
       </div>
 
