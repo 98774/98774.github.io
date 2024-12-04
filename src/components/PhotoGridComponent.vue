@@ -30,7 +30,7 @@ export default defineComponent({
 
   data() {
     return {
-      photos : [] as String[]
+      photos: [] as String[]
     }
   },
   components: {}
