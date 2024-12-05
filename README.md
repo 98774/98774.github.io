@@ -66,3 +66,15 @@ npm run test:e2e
 ```sh
 npm run lint
 ```
+
+# Important
+1. Need this command 
+git checkout main  # or your default branch
+npm run build      # rebuild the project
+git add dist
+git commit -m "Rebuild for deployment"
+git subtree push --prefix dist origin gh-pages
+
+Ideally would not be commiting dist and would only push it in the moment
+More ideal would be every tagged commit gets turned into a release using
+gh actions.

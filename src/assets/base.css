@@ -21,8 +21,8 @@
   --accent-color-1: #68b684;
   --accent-color-2: #99aea1;
 
-  --highlight-background: var(--grey);
-  --highlight-color: var(--light-grey);
+  --highlight-background: var(--dark-grey);
+  --highlight-color: var(--accent-color-2);
 
   /* Content Settings */
   --default-margin: 1px;

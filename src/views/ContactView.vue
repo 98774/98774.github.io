@@ -67,6 +67,7 @@ span {
   background-color: var(--default-panel-background);
   border-radius: var(--default-border-radius);
   padding: calc(2 * var(--default-padding));
+  line-height: 1.6;
 }
 
 .profile-image img {

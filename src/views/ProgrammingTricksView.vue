@@ -77,14 +77,14 @@ export default defineComponent({
 .content {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+  max-width: var(--content-max-width);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .content-panel {
   padding: 15px;
-  border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
