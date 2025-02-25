@@ -1,41 +1,49 @@
-<!-- Home.vue -->
 <template>
-  <div>
-    <h1>Home</h1>
-    <div class="panel">
-      <p>
-        Welcome to my site! Feel free to reach out with questions or comments.
-      </p>
-    </div>
-    <div class="vertical-flex">
-      <SummaryLinkComponent linkText="Programming Tricks" routerLink="/home/programming-tricks">
-        <template v-slot:details>
-          <p>Here you'll find a list of programming tricks and tips</p>
-        </template>
-      </SummaryLinkComponent>
-      <SummaryLinkComponent linkText="Drone Photography" routerLink="/home/drone-photos">
-        <template v-slot:details>
-          <p>I have dabbled in drone photography...</p>
-        </template>
-      </SummaryLinkComponent>
-      <SummaryLinkComponent linkText="Book List" routerLink="/home/book-list">
-        <template v-slot:details>
-          <p>Books I've read or plan to read</p>
-        </template>
-      </SummaryLinkComponent>
+  <div class="welcome-panel">
+    <div class="content">
+      <h1>Hi, I'm Jonathon Shirk Snyder</h1>
+      <p>Welcome to my site! Feel free to reach out with questions or comments.</p>
     </div>
   </div>
 </template>
+
 <script lang="ts">
 import { defineComponent } from 'vue'
-import SummaryLinkComponent from '@/components/SummaryLinkComponent.vue'
 
 export default defineComponent({
-  name: 'HomeView',
-  components: {
-    SummaryLinkComponent
-  }
+  name: 'WelcomePanel'
 })
 </script>
 
-<style scoped></style>
+<style scoped>
+.welcome-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh; /* Centers it vertically within the viewport */
+  opacity: var(--default-opacity);
+  color: var(--light-grey);
+  text-align: center;
+  padding: var(--default-padding);
+}
+
+.content {
+  background: var(--default-panel-background);
+  padding: 2rem;
+  border-radius: var(--default-border-radius);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border: var(--default-border);
+  max-width: 600px;
+}
+
+h1 {
+  font-size: calc(1.2 * var(--header-font-size));
+  color: var(--light-grey);
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: var(--content-font-size);
+  color: var(--accent-color-2);
+}
+</style>

@@ -60,12 +60,13 @@ export default defineComponent({
 
 .container:hover {
   background-color: var(--default-panel-background);
+  opacity: var(--default-opacity);
   width: calc(var(--content-max-width) * 0.8);
-
   cursor: pointer;
 }
+
 .container:hover .detail {
-  max-width: 60%;
+  max-width: 70%;
 }
 
 .container:hover .nav-link {

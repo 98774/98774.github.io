@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <h1>About</h1>
     <div class="button-group">
       <button
         v-for="(name, index) in headingNames"

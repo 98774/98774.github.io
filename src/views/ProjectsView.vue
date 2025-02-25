@@ -1,15 +1,13 @@
 <!-- Home.vue -->
 <template>
   <div class="content">
-    <h1>Projects</h1>
-    <p>(Ordered by interest)</p>
-
-    <SummaryLinkComponent linkText="SRT Program" routerLink="/projects/srt-program">
+    <p>Here are some of my favorite projects:</p>
+    <SummaryLinkComponent linkText="Dynamic Scheduler" routerLink="/projects/srt-program">
       <template v-slot:details>
         <ul>
           <li>Program for tracking dynamic attendance for schools</li>
           <li>Implements admin, teacher and student logins</li>
-          <li>Tracks "sign-outs" for students and enables requests</li>
+          <li>Built with Next.js, React, MySQL, Docker, and Node</li>
         </ul>
       </template>
     </SummaryLinkComponent>
@@ -62,5 +60,6 @@ export default defineComponent({
   flex-direction: column;
   width: var(--content-max-width);
   align-items: center;
+  justify-content:center;
 }
 </style>

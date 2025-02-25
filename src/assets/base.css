@@ -1,28 +1,28 @@
-/* color palette from <https://github.com/vuejs/theme> */
-
 :root {
   /* General Colors */
   --black: #000000;
-  --dark-grey: #303634;
-  --light-grey: #a3a3a3;
+  --dark-grey: #1a1e1f; /* Darker, cooler grey */
+  --light-grey: #d1d5d8; /* Soft misty grey */
   --white: #ffffff;
-  --green: #4caf50;
-  --light-green: #78f07d;
-  --grey: #505050;
-  --panel-grey: #464646;
+  --blue-grey: #6e8898; /* Misty blue tone */
+  --green: #87a88d; /* Muted, desaturated green */
+  --light-green: #b1d0c1; /* Softer, misty green */
+  --grey: #505a5e; /* Dark neutral grey */
+  --panel-grey: #394044; /* Cooler panel color */
 
   /* Themed Colors */
   --main-background-color: var(--dark-grey);
-  --nav-background-color: var(--dark-grey);
+  --nav-background-color: var(--panel-grey);
   --default-panel-background: var(--panel-grey);
 
-  --main-color: #95e06c;
-  --accent-color-3: #c3f73a;
-  --accent-color-1: #68b684;
-  --accent-color-2: #99aea1;
+  --main-color: #6a8c7c; /* Darker desaturated green */
+  --accent-color-3: #4b6775; /* Deep cloudy blue */
+  --accent-color-1: #35524a; /* Dark teal-green */
+  --accent-color-2: #5a6662; /* Charcoal grey-green */
 
   --highlight-background: var(--dark-grey);
   --highlight-color: var(--accent-color-2);
+  --default-opacity:60%;
 
   /* Content Settings */
   --default-margin: 1px;

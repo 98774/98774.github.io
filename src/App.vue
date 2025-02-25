@@ -2,13 +2,13 @@
   <div id="app">
     <header>
       <div class="links">
-        <!-- <router-link to="/" class="nav-link" :class="{ active: $route.path === '/' }"
+        <router-link to="/" class="nav-link" :class="{ active: $route.path === '/' }"
           >Home</router-link
-        > -->
+        >
         <router-link
-          to="/"
+          to="/projects"
           class="nav-link"
-          :class="{ active: $route.path === '/projects' || $route.path === '/'  }"
+          :class="{ active: $route.path === '/projects' }"
           >Projects</router-link
         >
         <router-link to="/about" class="nav-link" :class="{ active: $route.path === '/about' }"
@@ -25,7 +25,7 @@
     </main>
 
     <footer>
-      <p>&copy; 2024 Jonathon Shirk Snyder</p>
+      <p>&copy; 2025 Jonathon Shirk Snyder</p>
     </footer>
   </div>
 </template>
@@ -36,17 +36,28 @@ body {
   height: 100%;
   margin: 0;
 }
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Prevents scrolling */
+}
 
 #app {
+  position: relative;
+  width: 100vw;
+  height: 100vh; /* Forces it to fill the screen */
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Ensures full height */
   align-items: center;
+
+  background-image: url('./src/assets/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center; /* Ensures cropping from the top */
 }
 
 main {
-  flex: 1; /* Allows main content to grow and push the footer down */
-  padding-bottom: 50px; /* Optional: prevents overlap with the footer */
+  height: 100%;
 }
 
 header {
@@ -71,6 +82,7 @@ header {
     color 0.3s;
   font-size: var(--header-font-size);
   margin: 0 10px;
+  opacity: var(--default-opacity);
 }
 
 .nav-link:hover,
