@@ -26,9 +26,6 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.nav-link {
-  color: var(--accent-color-2);
-}
 
 .container {
   display: flex;
@@ -37,6 +34,7 @@ export default defineComponent({
   justify-content: center;
   height: 110px;
   border-radius: var(--default-border-radius);
+
 }
 
 .heading {
@@ -63,6 +61,7 @@ export default defineComponent({
   opacity: var(--default-opacity);
   width: calc(var(--content-max-width) * 0.8);
   cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .container:hover .detail {
@@ -70,7 +69,7 @@ export default defineComponent({
 }
 
 .container:hover .nav-link {
-  color: var(--accent-color-3);
+  color: var(--accent-color-2);
   background-color: transparent;
   font-weight: normal;
 }

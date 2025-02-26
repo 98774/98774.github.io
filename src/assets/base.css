@@ -4,7 +4,7 @@
   --dark-grey: #1a1e1f; /* Darker, cooler grey */
   --light-grey: #d1d5d8; /* Soft misty grey */
   --white: #ffffff;
-  --blue-grey: #6e8898; /* Misty blue tone */
+  --blue-grey: #4e6878; /* Misty blue tone */
   --green: #87a88d; /* Muted, desaturated green */
   --light-green: #b1d0c1; /* Softer, misty green */
   --grey: #505a5e; /* Dark neutral grey */
@@ -13,16 +13,16 @@
   /* Themed Colors */
   --main-background-color: var(--dark-grey);
   --nav-background-color: var(--panel-grey);
-  --default-panel-background: var(--panel-grey);
+  --default-panel-background: var(--blue-grey);
 
   --main-color: #6a8c7c; /* Darker desaturated green */
-  --accent-color-3: #4b6775; /* Deep cloudy blue */
-  --accent-color-1: #35524a; /* Dark teal-green */
-  --accent-color-2: #5a6662; /* Charcoal grey-green */
+  --accent-color-3: var(--light-grey);
+  --accent-color-1: var(--light-green);
+  --accent-color-2: var(--white);
 
   --highlight-background: var(--dark-grey);
   --highlight-color: var(--accent-color-2);
-  --default-opacity:60%;
+  --default-opacity: 70%;
 
   /* Content Settings */
   --default-margin: 1px;

@@ -1,7 +1,7 @@
 <!-- Home.vue -->
 <template>
   <div class="content">
-    <p>Here are some of my favorite projects:</p>
+    <p></p>
     <SummaryLinkComponent linkText="Dynamic Scheduler" routerLink="/projects/srt-program">
       <template v-slot:details>
         <ul>
@@ -31,7 +31,7 @@
       </template>
     </SummaryLinkComponent>
 
-    <SummaryLinkComponent linkText="Wireless LED Display" routerLink="/projects/wireless-grid">
+    <!-- <SummaryLinkComponent linkText="Wireless LED Display" routerLink="/projects/wireless-grid">
       <template v-slot:details>
         <ul>
           <li>Senior Design project at Purdue</li>
@@ -39,7 +39,7 @@
           <li>Bluetooth app to control each grid</li>
         </ul>
       </template>
-    </SummaryLinkComponent>
+    </SummaryLinkComponent> -->
   </div>
 </template>
 <script lang="ts">

@@ -1,12 +1,12 @@
 <template>
-  <div class="project-info">
+  <div class="content-panel project-info">
     <h1>{{ projectTitle }}</h1>
     <slot name="summary"></slot>
     <a v-if="githubLink" href="githubLink" target="_blank" rel="noopener noreferrer"
       >GitHub Repository</a
     >
 
-    <div class="content-panel">
+    <div class="">
       <slot name="detailed-description"></slot>
     </div>
   </div>
@@ -26,17 +26,18 @@ export default defineComponent({
 
 <style scoped>
 .project-info {
-  max-width: var(--content-max-width);
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: top;
   align-items: center;
   gap: 2px;
 }
+
 .content-panel {
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
+  opacity: 90%;
 }
 
-/* Add more styling based on your design preferences */
 </style>

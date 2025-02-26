@@ -25,7 +25,7 @@
     </main>
 
     <footer>
-      <p>&copy; 2025 Jonathon Shirk Snyder</p>
+      <!--<p>&copy; 2025 Jonathon Shirk Snyder</p> -->
     </footer>
   </div>
 </template>
@@ -36,10 +36,24 @@ body {
   height: 100%;
   margin: 0;
 }
-html, body {
+
+html,
+body {
   height: 100%;
   margin: 0;
   overflow: hidden; /* Prevents scrolling */
+}
+
+h1,
+p,
+h2 {
+  opacity: 1;
+  color: var(--white);
+}
+
+a {
+  opacity: 1;
+  color: var(--light-green);
 }
 
 #app {
@@ -72,9 +86,10 @@ header {
 }
 
 .nav-link {
-  padding: 10px 15px;
-  color: var(--accent-color-1);
+  color: var(--dark-grey);
   text-decoration: none;
+  padding: 10px;
+  padding-top: 5px;
   border-radius: var(--default-border-radius);
   transition:
     transform 0.2s,
@@ -87,17 +102,18 @@ header {
 
 .nav-link:hover,
 .nav-link.active {
-  background-color: var(--highlight-background);
+  background-color: var(--default-panel-background);
   color: var(--highlight-color);
   transform: scale(1.1);
 }
 
 /* Footer styles */
 footer {
-  background-color: var(--nav-background-dark);
-  color: var(--footer-text-color);
   text-align: center;
   padding: 10px;
   width: 100%;
+  p {
+    color: var(--dark-grey);
+  }
 }
 </style>

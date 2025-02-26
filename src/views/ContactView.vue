@@ -1,9 +1,7 @@
 <!-- ContactInfo.vue -->
 
 <template>
-  <div>
-    <h1>Contact Information</h1>
-    <p></p>
+  <div class="content">
     <div class="contact-info">
       <div class="profile-image">
         <img src="@/assets/fiery_earth.jpg" alt="Profile Image" />
@@ -57,7 +55,7 @@ export default defineComponent({
 
 <style scoped>
 span {
-  color: var(--accent-color-3);
+  color: var(--accent-color-2);
 }
 .contact-info {
   display: flex;
@@ -68,8 +66,17 @@ span {
   border-radius: var(--default-border-radius);
   padding: calc(2 * var(--default-padding));
   line-height: 1.6;
+  opacity: 1;
 }
-
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh; /* Centers it vertically within the viewport */
+  color: var(--light-grey);
+  text-align: center;
+  padding: var(--default-padding);
+}
 .profile-image img {
   width: 180px; /* Set the desired width for the profile image */
   height: 180px; /* Set the desired height for the profile image */

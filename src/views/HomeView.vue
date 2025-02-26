@@ -32,7 +32,6 @@ export default defineComponent({
   padding: 2rem;
   border-radius: var(--default-border-radius);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  border: var(--default-border);
   max-width: 600px;
 }
 

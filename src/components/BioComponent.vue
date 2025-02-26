@@ -55,6 +55,10 @@ export default defineComponent({
   flex-direction: column;
   align-items: center;
   width: var(--content-max-width);
+  opacity: var(--default-opacity);
+}
+a{
+  color: var(--accent-color-3);  
 }
 
 .button-group {
@@ -67,9 +71,9 @@ export default defineComponent({
 }
 
 button {
-  background-color: var(--dark-grey); /* Darker shade of green */
-  color: var(--light-grey);
-  border: 2px solid var(--grey);
+  background-color: var(--default-panel-background);
+  color: var(--accent-color-2);
+  border: 2px solid var(--default-border-radius);
   border-radius: var(--default-border-radius);
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
@@ -80,15 +84,17 @@ button {
 }
 
 button:hover {
-  background-color: var(--highlight-background);
   color: var(--highlight-color);
   transform: scale(1.05);
 }
 
 button.active {
   background-color: var(--accent-color-1); /* Active button color */
-  color: white;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  border-color: var(--accent-color-1);
+  opacity: var(--default-opacity);
   transform: scale(1.1);
+  color: var(--dark-grey);
 }
 
 .detail-container {
@@ -103,7 +109,7 @@ button.active {
 .detail p,
 .detail li {
   line-height: 1.6;
-  color: var(--accent-color-2);
+  color: var(--accent-color-1);
 }
 
 /* Fade animation */

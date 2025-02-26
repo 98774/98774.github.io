@@ -1,7 +1,6 @@
 @import './base.css';
 
 #app {
-  display: grid;
   justify-items: center;
 }
 
@@ -27,6 +26,6 @@
   background-color: var(--default-panel-background);
   border-radius: var(--default-border-radius);
   margin-top: calc(var(--default-margin) * 4);
-  text-align: left;
+  text-align: center;
   width: var(--content-max-width);
 }

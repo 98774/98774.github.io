@@ -6,7 +6,12 @@
       projectTitle="Minecraft Server"
       githubLink="https://github.com/98774/qmk_firmware.git"
     >
-      <template v-slot:summary> </template>
+      <template v-slot:summary
+        ><p>
+          This is the server configuraiton I use for my minecraft server. It automatically restarts
+          and hosts a screen session for easy viewing of the console.
+        </p>
+      </template>
 
       <template v-slot:detailed-description> </template>
     </ProjectInfo>
