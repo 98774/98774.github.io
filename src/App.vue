@@ -42,6 +42,9 @@ body {
   height: 100%;
   margin: 0;
   overflow: hidden; /* Prevents scrolling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1,

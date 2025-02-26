@@ -39,5 +39,4 @@ export default defineComponent({
   padding-right: 3%;
   opacity: 90%;
 }
-
 </style>

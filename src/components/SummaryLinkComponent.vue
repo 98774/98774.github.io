@@ -26,7 +26,6 @@ export default defineComponent({
 </script>
 
 <style scoped>
-
 .container {
   display: flex;
   flex-direction: row;
@@ -34,7 +33,6 @@ export default defineComponent({
   justify-content: center;
   height: 110px;
   border-radius: var(--default-border-radius);
-
 }
 
 .heading {

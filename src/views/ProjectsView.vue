@@ -58,8 +58,7 @@ export default defineComponent({
 .content {
   display: flex;
   flex-direction: column;
-  width: var(--content-max-width);
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
 </style>

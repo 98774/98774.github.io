@@ -68,7 +68,7 @@ span {
   line-height: 1.6;
   opacity: 1;
 }
-.content{
+.content {
   display: flex;
   align-items: center;
   justify-content: center;

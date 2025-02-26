@@ -57,8 +57,8 @@ export default defineComponent({
   width: var(--content-max-width);
   opacity: var(--default-opacity);
 }
-a{
-  color: var(--accent-color-3);  
+a {
+  color: var(--accent-color-3);
 }
 
 .button-group {
@@ -109,6 +109,7 @@ button.active {
 .detail p,
 .detail li {
   line-height: 1.6;
+  text-align: center;
   color: var(--accent-color-1);
 }
 
