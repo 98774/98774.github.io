@@ -69,10 +69,10 @@ span {
   opacity: 1;
 }
 .content {
+  margin-top: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60vh; /* Centers it vertically within the viewport */
   color: var(--light-grey);
   text-align: center;
   padding: var(--default-padding);

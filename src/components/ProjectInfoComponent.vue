@@ -32,11 +32,12 @@ export default defineComponent({
   justify-content: top;
   align-items: center;
   gap: 2px;
+  overflow: auto;
 }
 
 .content-panel {
   padding-left: 3%;
   padding-right: 3%;
-  opacity: 90%;
+  opacity: var(--default-opacity);
 }
 </style>

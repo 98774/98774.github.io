@@ -109,8 +109,9 @@
             press for that entire time. Instead we can scan all the keys every so often and see if
             any are pressed. So how does that help with pins? Imagine our 3x3 keyboard again. What
             if we used a wire for every row and a wire for every column. Now our keyboard only needs
-            6 wires instead of 9. We can check each wire
+            6 wires instead of 9.
           </p>
+          <p>POST STILL IN PROGRESS... Look below for a badly written AI version :)</p>
 
           <img
             class="project-image"
@@ -279,7 +280,9 @@ export default defineComponent({
   margin: 20px auto;
   border: 1px solid #ddd;
   border-radius: 4px;
+  opacity: 1;
 }
+
 h2 {
   font-weight: bold;
   margin-bottom: 10px;
@@ -289,12 +292,8 @@ ul,
 img {
   margin-bottom: 20px;
 }
-ul {
-  list-style-type: disc;
-  margin-left: 20px;
-}
+
 a {
-  color: #3498db;
   text-decoration: none;
 }
 a:hover {

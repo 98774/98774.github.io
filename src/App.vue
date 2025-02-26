@@ -33,18 +33,8 @@
 <style>
 html,
 body {
-  height: 100%;
   margin: 0;
-}
-
-html,
-body {
-  height: 100%;
-  margin: 0;
-  overflow: hidden; /* Prevents scrolling */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow: auto;
 }
 
 h1,
@@ -52,6 +42,9 @@ p,
 h2 {
   opacity: 1;
   color: var(--white);
+}
+li {
+  list-style-type: none;
 }
 
 a {
@@ -66,8 +59,9 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
 
-  background-image: url('./src/assets/background.jpg');
+  background-image: url('@/assets/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center; /* Ensures cropping from the top */
@@ -99,11 +93,14 @@ header {
     background-color 0.3s,
     color 0.3s;
   font-size: var(--header-font-size);
-  margin: 0 10px;
+  margin: 10px 10px;
   opacity: var(--default-opacity);
 }
 
-.nav-link:hover,
+.nav-link:hover{
+  color: var(--grey);
+  transform: scale(1.1);
+}
 .nav-link.active {
   background-color: var(--default-panel-background);
   color: var(--highlight-color);

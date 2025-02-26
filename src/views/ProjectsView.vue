@@ -26,7 +26,7 @@
       <template v-slot:details>
         <ul>
           <li>Linux Hosted Minecraft server configuration</li>
-          <li>Startup scripts and ideas</li>
+          <li>Startup scripts</li>
         </ul>
       </template>
     </SummaryLinkComponent>
