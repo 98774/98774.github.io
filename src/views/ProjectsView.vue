@@ -12,6 +12,15 @@
       </template>
     </SummaryLinkComponent>
 
+    <SummaryLinkComponent linkText="Wireless LED Display" routerLink="/projects/wireless-grid">
+      <template v-slot:details>
+        <ul>
+          <li>Senior Design project at Purdue</li>
+          <li>Configurable wireless LED grids</li>
+          <li>Bluetooth app to control each grid</li>
+        </ul>
+      </template>
+    </SummaryLinkComponent>
     <SummaryLinkComponent linkText="Dactyl Manuform Build" routerLink="/projects/dactyl-manuform">
       <template v-slot:details>
         <ul>
@@ -30,17 +39,7 @@
         </ul>
       </template>
     </SummaryLinkComponent>
-
-    <!-- <SummaryLinkComponent linkText="Wireless LED Display" routerLink="/projects/wireless-grid">
-      <template v-slot:details>
-        <ul>
-          <li>Senior Design project at Purdue</li>
-          <li>Configurable wireless LED grids</li>
-          <li>Bluetooth app to control each grid</li>
-        </ul>
-      </template>
-    </SummaryLinkComponent> -->
-  </div>
+ </div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
