@@ -4,7 +4,7 @@
   <div>
     <ProjectInfo
       projectTitle="Minecraft Server"
-      githubLink="https://github.com/98774/qmk_firmware.git"
+      githubLink="https://github.com/98774/mcserver.git"
     >
       <template v-slot:summary
         ><p>

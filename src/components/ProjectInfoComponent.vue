@@ -2,7 +2,7 @@
   <div class="content-panel project-info">
     <h1>{{ projectTitle }}</h1>
     <slot name="summary"></slot>
-    <a v-if="githubLink" href="githubLink" target="_blank" rel="noopener noreferrer"
+    <a v-if="githubLink" :href="githubLink" target="_blank" rel="noopener noreferrer"
       >GitHub Repository</a
     >
 
