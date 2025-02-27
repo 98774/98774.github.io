@@ -2,7 +2,7 @@
   <div class="welcome-panel">
     <div class="content">
       <h1>Hi, I'm Jonathon Shirk Snyder</h1>
-      <p>Welcome to my site! Feel free to reach out with questions or comments.</p>
+      <p>Welcome to my site! Have a look around and sip some tea &#127861;</p>
     </div>
   </div>
 </template>

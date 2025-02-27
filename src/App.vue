@@ -53,6 +53,7 @@ a {
 }
 
 #app {
+  font-family: "Trebuchet MS", sans-serif;
   position: relative;
   width: 100vw;
   height: 100vh; /* Forces it to fill the screen */
@@ -67,12 +68,7 @@ a {
   background-position: top center; /* Ensures cropping from the top */
 }
 
-main {
-  height: 100%;
-}
-
 header {
-  background: linear-gradient(to bottom, var(--nav-background-light), var(--nav-background-dark));
   padding: 10px 0;
 }
 
@@ -86,7 +82,6 @@ header {
   color: var(--dark-grey);
   text-decoration: none;
   padding: 10px;
-  padding-top: 5px;
   border-radius: var(--default-border-radius);
   transition:
     transform 0.2s,

@@ -65,7 +65,7 @@ const router = createRouter({
     {
       path: '/projects/wireless-grid',
       name: 'wireless-grid',
-      component: () => import('../views/ProjectWirelessLEDView.vue')
+      component: () => import('../views/ProjectSeniorDesignView.vue')
     },
     {
       path: '/projects/srt-program',
