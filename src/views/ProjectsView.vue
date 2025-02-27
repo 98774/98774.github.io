@@ -60,5 +60,8 @@ export default defineComponent({
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  li {
+    list-style-type: disc;
+  }
 }
 </style>

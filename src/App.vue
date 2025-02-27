@@ -97,7 +97,7 @@ header {
   opacity: var(--default-opacity);
 }
 
-.nav-link:hover{
+.nav-link:hover {
   color: var(--grey);
   transform: scale(1.1);
 }
@@ -111,7 +111,6 @@ header {
 footer {
   text-align: center;
   padding: 10px;
-  width: 100%;
   p {
     color: var(--dark-grey);
   }
