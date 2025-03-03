@@ -14,6 +14,7 @@
   --main-background-color: var(--dark-grey);
   --nav-background-color: var(--panel-grey);
   --default-panel-background: var(--blue-grey);
+  --heading-color: var(--white);
 
   --main-color: #6a8c7c; /* Darker desaturated green */
   --accent-color-3: var(--light-grey);
@@ -31,32 +32,56 @@
   --default-border: 2px solid var(--grey);
   --header-font-size: 27pt;
   --content-font-size: 16pt;
-  --content-max-width: 1200px;
+  --content-max-width: 80vw;
+  --default-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 500px) {
+  #app {
+    --content-max-width: 90vw;
+  }
+  h1 {
+    font-size: 20pt;
+  }
+}
+@media (min-width: 1000px) {
+  #app {
+    --content-max-width: 80vw;
+  }
+  h1 {
+    font-size: 23pt;
+  }
+}
+@media (min-width: 1500px) {
+  #app {
+    --content-max-width: 70vw;
+  }
 }
 
 body {
   background-color: var(--main-background-color);
-  color: var(--light-grey);
+  color: var(--white);
+  font-size: var(--content-font-size);
   margin: 0;
   text-align: center;
-  font-family: Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
 h1 {
-  color: var(--light-grey);
+  color: var(--heading-color);
   font-size: calc(1.8 * var(--header-font-size));
   margin: calc(var(--default-margin));
 }
 
 h2,
 h3 {
-  color: var(--light-grey);
+  color: var(--heading-color);
 }
 
 p,
 li {
+  opacity: 1;
+  color: var(--white);
   font-size: var(--content-font-size);
-  color: var(--accent-color-2);
 }
 
 a {

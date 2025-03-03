@@ -15,9 +15,6 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  data() {
-    return {}
-  },
   props: {
     routerLink: String,
     linkText: String
@@ -33,12 +30,25 @@ export default defineComponent({
   justify-content: center;
   height: 110px;
   border-radius: var(--default-border-radius);
+  padding: 10px;
+  transition:
+    background-color 0.3s 0.1s ease,
+    box-shadow 0.1s 0.1s ease,
+    width 0.5s 0.1s ease;
 }
 
 .heading {
-  max-width: 100%;
   flex-grow: 1;
-  transition: all 0.3s;
+  max-width: 100%;
+  transition:
+    transform 0.4s 0.1s ease-in-out,
+    color 0.4s 0.1s ease-in-out;
+}
+
+.nav-link {
+  transition:
+    transform 0.4s 0.1s ease-in-out,
+    color 0.4s 0.1s ease-in-out;
 }
 
 .detail {
@@ -47,27 +57,35 @@ export default defineComponent({
   flex-grow: 1;
   text-align: left;
   overflow: hidden;
-  max-width: 0;
   max-height: 100px;
-  transition: all 0.3s;
+  max-width: 0;
+  opacity: 0;
+  transition:
+    max-width 0.3s ease-in,
+    opacity 0.3s ease-in-out;
   justify-content: center;
   align-items: center;
+  color: transparent;
 }
 
 .container:hover {
   background-color: var(--default-panel-background);
-  opacity: var(--default-opacity);
+  box-shadow: var(--default-box-shadow);
   width: calc(var(--content-max-width) * 0.8);
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  opacity: var(--default-opacity);
+}
+
+.container:hover .heading {
+  transform: translateX(-10px);
 }
 
 .container:hover .detail {
-  max-width: 70%;
+  max-width: 50%;
+  opacity: 1;
+  color: var(--white);
 }
 
 .container:hover .nav-link {
   color: var(--accent-color-2);
-  background-color: transparent;
 }
 </style>

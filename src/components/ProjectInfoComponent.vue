@@ -1,13 +1,15 @@
 <template>
-  <div class="content-panel project-info">
-    <h1>{{ projectTitle }}</h1>
-    <slot name="summary"></slot>
-    <a v-if="githubLink" :href="githubLink" target="_blank" rel="noopener noreferrer"
-      >GitHub Repository</a
-    >
+  <div class="content-panel">
+    <div class="project-info">
+      <h1>{{ projectTitle }}</h1>
+      <slot name="summary"></slot>
+      <a v-if="githubLink" :href="githubLink" target="_blank" rel="noopener noreferrer"
+        >GitHub Repository</a
+      >
 
-    <div class="">
-      <slot name="detailed-description"></slot>
+      <div class="">
+        <slot name="detailed-description"></slot>
+      </div>
     </div>
   </div>
 </template>
@@ -33,11 +35,13 @@ export default defineComponent({
   align-items: center;
   gap: 2px;
   overflow: auto;
+  opacity: 1;
 }
 
 .content-panel {
   padding-left: 3%;
   padding-right: 3%;
-  opacity: var(--default-opacity);
+  background-color: var(--green);
+  box-shadow: var(--default-box-shadow);
 }
 </style>

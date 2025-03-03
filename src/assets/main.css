@@ -28,6 +28,7 @@
   margin-top: calc(var(--default-margin) * 4);
   text-align: center;
   width: var(--content-max-width);
+  box-shadow: var(--default-box-shadow);
 }
 
 /* width */

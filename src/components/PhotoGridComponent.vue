@@ -49,7 +49,7 @@ export default defineComponent({
   max-height: 500px;
   flex: 1 1 calc(33.333% - 16px); /* Adjust the percentage based on your desired column count */
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--default-box-shadow);
   justify-content: center;
 }
 
