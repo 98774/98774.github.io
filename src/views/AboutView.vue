@@ -30,7 +30,7 @@ export default defineComponent({
       headingNames: ['Overview', 'Beyond Computers', 'Coursework'],
       details: [
         `<p>In May 2023, I graduated with a Bachelor's degree in Computer Engineering from Purdue University. I really enjoy working  at the boundary between hardware and software to create custom platforms. I have a background in Linux, specifically building Linux for embedded systems. I enjoy the challenge of connecting software with hardware and designing systems for custom purposes.</p>
-        <p>On the other side of the spectrum, I enjoy web development. I have been using JavaScript for many years and more recently began using frameworks, specifically Vue.js. This site was built with <a href='https://vuejs.org/'>Vue.js</a> so go check it out! Beyond the front-end, I enjoy server configuration and database management. I designed a scheduling management program for school districts. To learn more about that, visit our <a href='https://feljon.org/'>website</a>.</p>
+        <p>On the other side of the stack, I enjoy web development. I have been using JavaScript for many years and more recently began using frameworks, specifically Vue.js. This site was built with <a href='https://vuejs.org/'>Vue.js</a> so go check it out! Beyond the front-end, I enjoy server configuration and database management. I designed a scheduling management program for school districts. To learn more about that, visit our <a href='https://feljon.org/'>website</a>.</p>
         <p>Right now I am serving as a year-long volunteer with <a href='https://mds.org/'>Mennonite Disaster Service</a>. You can read more about that experience on our <a href='https://katieandjonathon-mds.blogspot.com/'>blog</a>.</p>`,
 
         `<p>When I'm not working on personal projects, I love getting outside. Rock climbing is my favorite outdoor activity, but I also enjoy hiking and backpacking. I live in Princeton, NJ with my wife Katie. Since getting married in 2022, we took turns finishing up school. Now we are looking for our next adventure!</p>`,
@@ -90,9 +90,7 @@ button:hover {
 
 button.active {
   background-color: var(--default-panel-background);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-  border-color: var(--accent-color-1);
-  opacity: var(--default-opacity);
+  box-shadow: var(--default-box-shadow);
   transform: scale(1.1);
   color: var(--accent-color-2);
 }
@@ -108,10 +106,8 @@ button.active {
 
 .detail p,
 .detail li {
-
   line-height: 1.6;
   text-align: center;
-  color: var(--accent-color-1);
 }
 
 /* Fade animation */

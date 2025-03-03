@@ -5,9 +5,9 @@
     <SummaryLinkComponent linkText="Dynamic Scheduler" routerLink="/projects/srt-program">
       <template v-slot:details>
         <ul>
-          <li>Program for tracking dynamic attendance for schools</li>
-          <li>Implements admin, teacher and student logins</li>
-          <li>Built with Next.js, React, MySQL, Docker, and Node</li>
+          <li>Program for tracking dynamic attendance</li>
+          <li>Implements custom user permissions</li>
+          <li>Built with Next.js, React, and MySQL</li>
         </ul>
       </template>
     </SummaryLinkComponent>
@@ -39,7 +39,7 @@
         </ul>
       </template>
     </SummaryLinkComponent>
- </div>
+  </div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'

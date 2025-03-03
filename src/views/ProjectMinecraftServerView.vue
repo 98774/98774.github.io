@@ -2,10 +2,7 @@
 
 <template>
   <div>
-    <ProjectInfo
-      projectTitle="Minecraft Server"
-      githubLink="https://github.com/98774/mcserver.git"
-    >
+    <ProjectInfo projectTitle="Minecraft Server" githubLink="https://github.com/98774/mcserver.git">
       <template v-slot:summary
         ><p>
           This is the server configuraiton I use for my minecraft server. It automatically restarts

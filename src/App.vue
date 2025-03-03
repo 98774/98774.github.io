@@ -37,12 +37,6 @@ body {
   overflow: auto;
 }
 
-h1,
-p,
-h2 {
-  opacity: 1;
-  color: var(--white);
-}
 li {
   list-style-type: none;
 }
@@ -53,7 +47,7 @@ a {
 }
 
 #app {
-  font-family: "Trebuchet MS", sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
   position: relative;
   width: 100vw;
   height: 100vh; /* Forces it to fill the screen */
@@ -89,7 +83,6 @@ header {
     color 0.3s;
   font-size: var(--header-font-size);
   margin: 10px 10px;
-  opacity: var(--default-opacity);
 }
 
 .nav-link:hover {
@@ -99,7 +92,9 @@ header {
 .nav-link.active {
   background-color: var(--default-panel-background);
   color: var(--highlight-color);
+  opacity: var(--default-opacity);
   transform: scale(1.1);
+  box-shadow: var(--default-box-shadow);
 }
 
 /* Footer styles */

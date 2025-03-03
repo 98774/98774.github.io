@@ -31,7 +31,7 @@ export default defineComponent({
   background: var(--default-panel-background);
   padding: 2rem;
   border-radius: var(--default-border-radius);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--default-box-shadow);
   max-width: 600px;
 }
 
@@ -39,10 +39,5 @@ h1 {
   font-size: calc(1.2 * var(--header-font-size));
   color: var(--light-grey);
   margin-bottom: 1rem;
-}
-
-p {
-  font-size: var(--content-font-size);
-  color: var(--accent-color-2);
 }
 </style>

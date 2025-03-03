@@ -1,7 +1,7 @@
 <!-- ContactInfo.vue -->
 
 <template>
-  <div class="content">
+  <div class="content-panel">
     <div class="contact-info">
       <div class="profile-image">
         <img src="@/assets/fiery_earth.jpg" alt="Profile Image" />
@@ -68,15 +68,11 @@ span {
   line-height: 1.6;
   opacity: 1;
 }
-.content {
-  margin-top: 10%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--light-grey);
-  text-align: center;
-  padding: var(--default-padding);
+.content-panel {
+  opacity: var(--default-opacity);
+  max-width: 600px;
 }
+
 .profile-image img {
   width: 180px; /* Set the desired width for the profile image */
   height: 180px; /* Set the desired height for the profile image */
