@@ -41,7 +41,7 @@ export default defineComponent({
 .content-panel {
   padding-left: 3%;
   padding-right: 3%;
-  background-color: var(--green);
+  background-color: var(--grey);
   box-shadow: var(--default-box-shadow);
 }
 </style>

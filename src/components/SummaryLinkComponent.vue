@@ -60,9 +60,7 @@ export default defineComponent({
   max-height: 100px;
   max-width: 0;
   opacity: 0;
-  transition:
-    max-width 0.3s ease-in,
-    opacity 0.3s ease-in-out;
+  transition: max-width 0.3s ease-in-out;
   justify-content: center;
   align-items: center;
   color: transparent;
@@ -73,10 +71,6 @@ export default defineComponent({
   box-shadow: var(--default-box-shadow);
   width: calc(var(--content-max-width) * 0.8);
   opacity: var(--default-opacity);
-}
-
-.container:hover .heading {
-  transform: translateX(-10px);
 }
 
 .container:hover .detail {
