@@ -42,13 +42,11 @@ export default defineComponent({
   max-width: 100%;
   transition:
     transform 0.4s 0.1s ease-in-out,
-    color 0.4s 0.1s ease-in-out;
 }
 
 .nav-link {
   transition:
     transform 0.4s 0.1s ease-in-out,
-    color 0.4s 0.1s ease-in-out;
 }
 
 .detail {

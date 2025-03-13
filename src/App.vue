@@ -37,6 +37,7 @@ body {
   overflow: auto;
 }
 
+
 li {
   list-style-type: none;
 }
@@ -47,7 +48,7 @@ a {
 }
 
 #app {
-  font-family: 'Trebuchet MS', sans-serif;
+  font-family: "Trebuchet MS", sans-serif;
   position: relative;
   width: 100vw;
   height: 100vh; /* Forces it to fill the screen */
@@ -80,7 +81,8 @@ header {
   transition:
     transform 0.2s,
     background-color 0.3s,
-    color 0.3s;
+    color 0.3s,
+    box-shadow 0.3s;
   font-size: var(--header-font-size);
   margin: 10px 10px;
 }
@@ -92,9 +94,9 @@ header {
 .nav-link.active {
   background-color: var(--default-panel-background);
   color: var(--highlight-color);
-  opacity: var(--default-opacity);
   transform: scale(1.1);
-  box-shadow: var(--default-box-shadow);
+  opacity: var(--default-opacity);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* Footer styles */

@@ -80,7 +80,8 @@ button {
   cursor: pointer;
   transition:
     transform 0.2s,
-    background-color 0.3s;
+    background-color 0.3s,
+    opacity 0.3s;
 }
 
 button:hover {
@@ -101,6 +102,7 @@ button.active {
   padding-right: 2%;
   border-radius: var(--default-border-radius);
   background-color: var(--default-panel-background);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
   text-align: left;
 }
 
