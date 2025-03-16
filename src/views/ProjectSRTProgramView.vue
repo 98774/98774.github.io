@@ -41,6 +41,8 @@
   </ProjectInfo>
 </template>
 
+<style scoped>
+</style>
 <script lang="ts">
 import { defineComponent } from 'vue'
 import ProjectInfo from '@/components/ProjectInfoComponent.vue' // Adjust the path based on your project structure

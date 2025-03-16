@@ -1,7 +1,6 @@
 <!-- Home.vue -->
 <template>
   <div class="content">
-    <p></p>
     <SummaryLinkComponent linkText="Dynamic Scheduler" routerLink="/projects/srt-program">
       <template v-slot:details>
         <ul>
