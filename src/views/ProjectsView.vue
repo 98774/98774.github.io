@@ -21,6 +21,16 @@
         </ul>
       </template>
     </SummaryLinkComponent>
+    <SummaryLinkComponent linkText="Maze Runner" routerLink="/projects/maze-runner">
+      <template v-slot:details>
+        <ul>
+          <li>Microcontroller based maze running game</li>
+          <li>Implements timers, interrupts, SPI, I2C and UART</li>
+          <li>Plays music using a DAC and DMA with an SD card</li>
+        </ul>
+      </template>
+    </SummaryLinkComponent>
+
     <SummaryLinkComponent linkText="Dactyl Manuform Build" routerLink="/projects/dactyl-manuform">
       <template v-slot:details>
         <ul>
@@ -31,14 +41,14 @@
       </template>
     </SummaryLinkComponent>
 
-    <SummaryLinkComponent linkText="Minecraft Server" routerLink="/projects/mcserver">
+    <!-- <SummaryLinkComponent linkText="Minecraft Server" routerLink="/projects/mcserver">
       <template v-slot:details>
         <ul>
           <li>Linux Hosted Minecraft server configuration</li>
           <li>Startup scripts</li>
         </ul>
       </template>
-    </SummaryLinkComponent>
+    </SummaryLinkComponent> -->
   </div>
 </template>
 <script lang="ts">

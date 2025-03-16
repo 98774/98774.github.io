@@ -58,6 +58,11 @@ const router = createRouter({
       component: () => import('../views/ProjectDactylManuformView.vue')
     },
     {
+      path: '/projects/maze-runner',
+      name: 'maze-runner',
+      component: () => import('../views/ProjectMazeRunnerView.vue')
+    },
+    {
       path: '/projects/mcserver',
       name: 'mcserver',
       component: () => import('../views/ProjectMinecraftServerView.vue')
