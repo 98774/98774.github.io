@@ -91,7 +91,7 @@ button:hover {
 
 button.active {
   background-color: var(--default-panel-background);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--default-box-shadow);
   transform: scale(1.1);
   color: var(--accent-color-2);
 }
@@ -102,7 +102,7 @@ button.active {
   padding-right: 2%;
   border-radius: var(--default-border-radius);
   background-color: var(--default-panel-background);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--default-box-shadow);
   text-align: left;
 }
 

@@ -96,7 +96,7 @@ header {
   color: var(--highlight-color);
   transform: scale(1.1);
   opacity: var(--default-opacity);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--default-box-shadow);
 }
 
 /* Footer styles */

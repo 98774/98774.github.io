@@ -28,7 +28,7 @@ export default defineComponent({
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 110px;
+  height: 100px;
   border-radius: var(--default-border-radius);
   padding: 10px;
   transition:

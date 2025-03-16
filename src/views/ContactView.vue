@@ -62,15 +62,13 @@ span {
   align-items: center;
   justify-content: left;
   text-align: left;
-  background-color: var(--default-panel-background);
   border-radius: var(--default-border-radius);
   padding: calc(2 * var(--default-padding));
   line-height: 1.6;
-  opacity: 1;
 }
 .content-panel {
-  opacity: var(--default-opacity);
   max-width: 600px;
+  background-color: var(--grey);
 }
 
 .profile-image img {
